@@ -42,6 +42,7 @@ hr{
 }
 
 .calculator_display{
+  overflow: hidden;
   text-align: end;
   color: white;
   font-size: 1.714285714em;
