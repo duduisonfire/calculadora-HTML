@@ -1,58 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-	<head>
-		<title>Calculadora</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./calculadora.css">
-	</head>
-
+  </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <div class="calculadora">
-            <input id="resultado" type="text" class="form-control resultado" placeholder="0"/>
-            
-            <div class="row">
-              <button onclick='calcular("action", "c")' type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
-              <button onclick='calcular("action", "/")' type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
-              <button onclick='calcular("action", "*")' type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
-            </div>
-
-            <div class="row">
-              <button onclick='calcular("calcValue", 7)' type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
-              <button onclick='calcular("calcValue", 8)' type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
-              <button onclick='calcular("calcValue", 9)' type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
-              <button onclick='calcular("action", "+")' type="button" class="btn btn-dark btn-lg font-weight-light">+</button>              
-            </div>
-            
-            <div class="row">
-              <button onclick='calcular("calcValue", 4)' type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
-              <button onclick='calcular("calcValue", 5)' type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
-              <button onclick='calcular("calcValue", 6)' type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
-              <button onclick='calcular("action", "-")' type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
-            </div>
-
-            <div class="row">
-              <button onclick='calcular("calcValue", 1)' type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
-              <button onclick='calcular("calcValue", 2)' type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
-              <button onclick='calcular("calcValue", 3)' type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
-              <button onclick='calcular("action", ".")' type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
-            </div>
-
-            <div class="row">
-              <button onclick='calcular("calcValue", 0)' type="button" class="btn btn-dark btn-lg clear font-weight-light">0</button>
-              <button onclick='calcular("action", "parentheses1")' type="button" class="btn btn-dark btn-lg font-weight-light">(</button>
-              <button onclick='calcular("action", "parentheses2")' type="button" class="btn btn-dark btn-lg font-weight-light">)</button>
-            </div>
-            <div class="row">
-              <button onclick='calcular("action", "=")' type="button" class="btn btn-dark btn-lg enter">=</button>
-            </div>
-          </div>
+      <div class="calculator">
+        <div class="calculator_display">0</div>
+        <hr>
+        <div class="calculator_keys">
+          <button class="key--operator keys" data-action="add">+</button>
+          <button class="key--operator keys" data-action="subtract">-</button>
+          <button class="key--operator keys" data-action="multiply">&times;</button>
+          <button class="key--operator keys" data-action="divide">÷</button>
+          <button class="keys">7</button>
+          <button class="keys">8</button>
+          <button class="keys">9</button>
+          <button class="keys">4</button>
+          <button class="keys">5</button>
+          <button class="keys">6</button>
+          <button class="keys">1</button>
+          <button class="keys">2</button>
+          <button class="keys">3</button>
+          <button class="keys border-right">0</button>
+          <button class='keys' data-action="decimal">.</button>
+          <button class='keys' data-action="clear">AC</button>
+          <button class="key--equal" data-action="calculate">=</button>
         </div>
       </div>
-    </div>  
-    <script src="./calculadora.js"></script>  
-  </body>	
-
+    </div>    
+    <script src="./calculadora.js" async defer></script>
+  </body>
 </html>
