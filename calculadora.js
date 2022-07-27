@@ -81,7 +81,7 @@ keys.addEventListener('click', event => {
               }
               
             display.textContent = 0
-              calculator.dataset.previousKeyType = 'clear'
+            calculator.dataset.previousKeyType = 'clear'
  
         }
 
