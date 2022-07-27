@@ -1,6 +1,6 @@
 const calculator = document.querySelector('.calculator');
 const keys = calculator.querySelector('.calculator_keys');
-const display = document.querySelector('.calculator_display');
+const display = calculator.querySelector('.calculator_display');
 
 const calculate = (n1, operator, n2) => {
     let result = '';
