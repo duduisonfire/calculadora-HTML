@@ -71,18 +71,12 @@ keys.addEventListener('click', event => {
 
         if (action === 'clear'){
             console.log('clear key!');
-            if (key.textContent === 'AC') {
-                calculator.dataset.firstValue = ''
-                calculator.dataset.modValue = ''
-                calculator.dataset.operator = ''
-                calculator.dataset.previousKeyType = ''
-              } else {
-                key.textContent = 'AC'
-              }
-              
+            calculator.dataset.firstValue = ''
+            calculator.dataset.modValue = ''
+            calculator.dataset.operator = ''
+            calculator.dataset.previousKeyType = ''
             display.textContent = 0
             calculator.dataset.previousKeyType = 'clear'
- 
         }
 
         if (action === 'calculate'){
