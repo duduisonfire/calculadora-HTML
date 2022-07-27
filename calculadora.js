@@ -71,12 +71,12 @@ keys.addEventListener('click', event => {
 
         if (action === 'clear'){
             console.log('clear key!');
-            calculator.dataset.firstValue = ''
-            calculator.dataset.modValue = ''
-            calculator.dataset.operator = ''
-            calculator.dataset.previousKeyType = ''
-            display.textContent = 0
-            calculator.dataset.previousKeyType = 'clear'
+            calculator.dataset.firstValue = '';
+            calculator.dataset.modValue = '';
+            calculator.dataset.operator = '';
+            calculator.dataset.previousKeyType = '';
+            display.textContent = 0;
+            calculator.dataset.previousKeyType = 'clear';
         }
 
         if (action === 'calculate'){
@@ -88,7 +88,7 @@ keys.addEventListener('click', event => {
             if (firstValue) {
                 if (previousKeyType === 'calculate') {
                     firstValue = displayedNum;
-                    secondValue = calculator.dataset.modValue
+                    secondValue = calculator.dataset.modValue;
                   }
                   
                   display.textContent = calculate(firstValue, operator, secondValue);
