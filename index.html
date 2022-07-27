@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./calculadora.css">
+	</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+          <div class="calculadora">
+            <input id="resultado" type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+            <div class="row">
+              <button onclick='calcular("action", "c")' type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+              <button onclick='calcular("action", "/")' type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+              <button onclick='calcular("action", "*")' type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+            </div>
+
+            <div class="row">
+              <button onclick='calcular("calcValue", 7)' type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+              <button onclick='calcular("calcValue", 8)' type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+              <button onclick='calcular("calcValue", 9)' type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+              <button onclick='calcular("action", "-")' type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+            </div>
+            
+            <div class="row">
+              <button onclick='calcular("calcValue", 4)' type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+              <button onclick='calcular("calcValue", 5)' type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+              <button onclick='calcular("calcValue", 6)' type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button onclick='calcular("action", "+")' type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+            </div>
+
+            <div class="row">
+              <button onclick='calcular("calcValue", 1)' type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+              <button onclick='calcular("calcValue", 2)' type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+              <button onclick='calcular("calcValue", 3)' type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button onclick='calcular("calcValue", 0)' type="button" class="btn btn-dark btn-lg font-weight-light">0</button>
+              <button onclick='calcular("action", "parentheses1")' type="button" class="btn btn-dark btn-lg font-weight-light">(</button>
+              <button onclick='calcular("action", "parentheses2")' type="button" class="btn btn-dark btn-lg font-weight-light">)</button>
+              <button onclick='calcular("action", ".")' type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+            </div>
+            <div class="row">
+              <button onclick='calcular("action", "=")' type="button" class="btn btn-dark btn-lg enter">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <script src="./calculadora.js"></script>  
+  </body>	
+
+</html>
