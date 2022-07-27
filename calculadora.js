@@ -35,7 +35,7 @@ keys.addEventListener('click', event => {
             } else{
                 display.textContent = display.textContent + keyContent;
             }
-            calculator.dataset.previousKey = 'number';
+            calculator.dataset.previousKeyType = 'number';
         }
 
         if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide'){
@@ -45,7 +45,7 @@ keys.addEventListener('click', event => {
             const operator = calculator.dataset.operator;
             const secondValue = displayedNum;
 
-            if (firstValue && operator && previousKeyType === 'operator' && previousKeyType !== 'calculate') {
+            if (firstValue && operator && previousKeyType !== 'operator' && previousKeyType !== 'calculate') {
                 const calcValue = calculate(firstValue, operator, secondValue);
                 display.textContent = calcValue;
                 calculator.dataset.firstValue = calcValue;
