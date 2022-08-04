@@ -5,8 +5,6 @@ Está é uma calculadora feita com HTML, CSS e JavaScript com o intuito de prati
 
 Layout totalmente responsivo.
 
-o//
-
 Você pode pré-visualizar este projeto no link: https://duduisonfire.github.io/calculadora-HTML/
 
 ---
