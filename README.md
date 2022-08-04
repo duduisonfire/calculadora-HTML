@@ -7,6 +7,8 @@ Layout totalmente responsivo.
 
 Você pode pré-visualizar este projeto no link: https://duduisonfire.github.io/calculadora-HTML/
 
+o//
+
 ---
 Hello, welcome, my name is Igor Tiburcio Cavalcanti and this is a project that I created during my studies in HTML, CSS, Bootstrap and JavaScript.
 
